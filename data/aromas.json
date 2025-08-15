@@ -1,0 +1,260 @@
+{
+  "aromas": [
+    {
+      "id": "lavender",
+      "name_ja": "ラベンダー",
+      "name_en": "Lavender",
+      "category": "フローラル系",
+      "effects": ["リラックス", "安眠", "鎮静", "頭痛緩和"],
+      "symptoms": ["不眠", "ストレス", "頭痛", "緊張"],
+      "scenes": ["就寝前", "リラックスタイム", "ヨガ"],
+      "price_range": "1000-3000",
+      "difficulty": "beginner",
+      "blend_well": ["orange", "bergamot", "geranium"],
+      "cautions": ["妊娠初期は避ける", "低血圧の方は注意"],
+      "usage": {
+        "diffuser": "3-5滴",
+        "bath": "1-3滴",
+        "massage": "1%希釈"
+      },
+      "description": "心を落ち着かせる代表的な精油",
+      "color": "#9B7EBD"
+    },
+    {
+      "id": "orange",
+      "name_ja": "オレンジスイート",
+      "name_en": "Orange Sweet",
+      "category": "柑橘系",
+      "effects": ["気分転換", "リフレッシュ", "消化促進", "安眠"],
+      "symptoms": ["気分の落ち込み", "不安", "食欲不振"],
+      "scenes": ["朝", "仕事中", "リビング"],
+      "price_range": "800-2000",
+      "difficulty": "beginner",
+      "blend_well": ["lavender", "peppermint", "ylang_ylang"],
+      "cautions": ["光毒性があるため使用後は日光を避ける"],
+      "usage": {
+        "diffuser": "3-5滴",
+        "bath": "2-4滴",
+        "massage": "1-2%希釈"
+      },
+      "description": "明るく爽やかな香りで気分を上げる",
+      "color": "#FFA726"
+    },
+    {
+      "id": "bergamot",
+      "name_ja": "ベルガモット",
+      "name_en": "Bergamot",
+      "category": "柑橘系",
+      "effects": ["ストレス緩和", "抗うつ", "消化促進", "抗菌"],
+      "symptoms": ["不安", "緊張", "消化不良"],
+      "scenes": ["午後", "仕事中", "リラックスタイム"],
+      "price_range": "1500-3500",
+      "difficulty": "intermediate",
+      "blend_well": ["lavender", "geranium", "ylang_ylang"],
+      "cautions": ["光毒性あり"],
+      "usage": {
+        "diffuser": "2-4滴",
+        "bath": "2-3滴",
+        "massage": "1%希釈"
+      },
+      "description": "アールグレイティーの香り付けに使われる柑橘系精油",
+      "color": "#A5D6A7"
+    },
+    {
+      "id": "peppermint",
+      "name_ja": "ペパーミント",
+      "name_en": "Peppermint",
+      "category": "ハーブ系",
+      "effects": ["集中力向上", "頭痛緩和", "消化促進", "清涼感"],
+      "symptoms": ["頭痛", "吐き気", "集中力低下", "眠気"],
+      "scenes": ["朝", "勉強中", "運転前"],
+      "price_range": "1000-2500",
+      "difficulty": "beginner",
+      "blend_well": ["rosemary", "lemon", "eucalyptus"],
+      "cautions": ["妊娠中・授乳中は避ける", "3歳未満の子供には使用しない"],
+      "usage": {
+        "diffuser": "1-3滴",
+        "bath": "1-2滴",
+        "massage": "0.5-1%希釈"
+      },
+      "description": "スッキリとした清涼感のある香り",
+      "color": "#66BB6A"
+    },
+    {
+      "id": "eucalyptus",
+      "name_ja": "ユーカリ",
+      "name_en": "Eucalyptus",
+      "category": "樹木系",
+      "effects": ["呼吸器系サポート", "抗菌", "集中力向上", "リフレッシュ"],
+      "symptoms": ["鼻づまり", "花粉症", "風邪", "集中力低下"],
+      "scenes": ["風邪の時期", "花粉シーズン", "掃除"],
+      "price_range": "900-2000",
+      "difficulty": "beginner",
+      "blend_well": ["peppermint", "tea_tree", "lemon"],
+      "cautions": ["高血圧の方は注意", "妊娠中は避ける"],
+      "usage": {
+        "diffuser": "2-4滴",
+        "bath": "2-3滴",
+        "massage": "1-2%希釈"
+      },
+      "description": "スーッとした清涼感のある香り",
+      "color": "#81C784"
+    },
+    {
+      "id": "rosemary",
+      "name_ja": "ローズマリー",
+      "name_en": "Rosemary",
+      "category": "ハーブ系",
+      "effects": ["記憶力向上", "集中力向上", "血行促進", "抗酸化"],
+      "symptoms": ["記憶力低下", "冷え性", "筋肉痛", "疲労"],
+      "scenes": ["勉強中", "朝", "運動前後"],
+      "price_range": "1200-2800",
+      "difficulty": "intermediate",
+      "blend_well": ["peppermint", "lemon", "lavender"],
+      "cautions": ["高血圧の方は避ける", "てんかんの方は使用しない"],
+      "usage": {
+        "diffuser": "2-4滴",
+        "bath": "2-3滴",
+        "massage": "1-2%希釈"
+      },
+      "description": "シャープで刺激的なハーブの香り",
+      "color": "#7CB342"
+    },
+    {
+      "id": "lemon",
+      "name_ja": "レモン",
+      "name_en": "Lemon",
+      "category": "柑橘系",
+      "effects": ["リフレッシュ", "集中力向上", "抗菌", "消臭"],
+      "symptoms": ["集中力低下", "気分の落ち込み", "むくみ"],
+      "scenes": ["朝", "掃除", "仕事中"],
+      "price_range": "800-2000",
+      "difficulty": "beginner",
+      "blend_well": ["eucalyptus", "rosemary", "peppermint"],
+      "cautions": ["光毒性あり"],
+      "usage": {
+        "diffuser": "3-5滴",
+        "bath": "2-3滴",
+        "massage": "1%希釈"
+      },
+      "description": "爽やかでフレッシュな柑橘の香り",
+      "color": "#FFF176"
+    },
+    {
+      "id": "geranium",
+      "name_ja": "ゼラニウム",
+      "name_en": "Geranium",
+      "category": "フローラル系",
+      "effects": ["ホルモンバランス調整", "ストレス緩和", "美肌", "虫除け"],
+      "symptoms": ["PMS", "更年期症状", "不安", "肌荒れ"],
+      "scenes": ["バスタイム", "スキンケア", "リラックスタイム"],
+      "price_range": "2000-4000",
+      "difficulty": "intermediate",
+      "blend_well": ["lavender", "bergamot", "rose"],
+      "cautions": ["妊娠初期は避ける"],
+      "usage": {
+        "diffuser": "2-4滴",
+        "bath": "2-3滴",
+        "massage": "1%希釈"
+      },
+      "description": "バラに似た甘く優しい香り",
+      "color": "#EC407A"
+    },
+    {
+      "id": "ylang_ylang",
+      "name_ja": "イランイラン",
+      "name_en": "Ylang Ylang",
+      "category": "フローラル系",
+      "effects": ["リラックス", "催淫", "血圧降下", "抗うつ"],
+      "symptoms": ["不安", "高血圧", "不眠", "性的な問題"],
+      "scenes": ["バスタイム", "寝室", "デート"],
+      "price_range": "2500-5000",
+      "difficulty": "advanced",
+      "blend_well": ["bergamot", "sandalwood", "jasmine"],
+      "cautions": ["使いすぎると頭痛の原因になる", "低血圧の方は注意"],
+      "usage": {
+        "diffuser": "1-2滴",
+        "bath": "1-2滴",
+        "massage": "0.5-1%希釈"
+      },
+      "description": "濃厚で甘い花の香り",
+      "color": "#FFB6C1"
+    },
+    {
+      "id": "tea_tree",
+      "name_ja": "ティートリー",
+      "name_en": "Tea Tree",
+      "category": "樹木系",
+      "effects": ["抗菌", "抗ウイルス", "免疫力向上", "ニキビ改善"],
+      "symptoms": ["風邪", "ニキビ", "水虫", "カンジダ"],
+      "scenes": ["風邪予防", "スキンケア", "掃除"],
+      "price_range": "1500-3000",
+      "difficulty": "beginner",
+      "blend_well": ["eucalyptus", "lavender", "lemon"],
+      "cautions": ["ペットがいる場合は注意"],
+      "usage": {
+        "diffuser": "2-4滴",
+        "bath": "2-3滴",
+        "massage": "1-2%希釈"
+      },
+      "description": "薬草のようなシャープな香り",
+      "color": "#4CAF50"
+    }
+  ],
+  "blends": [
+    {
+      "id": "good_sleep",
+      "name": "ぐっすり安眠ブレンド",
+      "recipe": [
+        {"aroma_id": "lavender", "drops": 2},
+        {"aroma_id": "orange", "drops": 1}
+      ],
+      "effects": ["安眠", "リラックス"],
+      "scene": "就寝30分前"
+    },
+    {
+      "id": "morning_refresh",
+      "name": "朝のスッキリブレンド",
+      "recipe": [
+        {"aroma_id": "lemon", "drops": 2},
+        {"aroma_id": "peppermint", "drops": 1},
+        {"aroma_id": "rosemary", "drops": 1}
+      ],
+      "effects": ["目覚め", "集中力向上"],
+      "scene": "朝起きてすぐ"
+    },
+    {
+      "id": "stress_relief",
+      "name": "ストレス解消ブレンド",
+      "recipe": [
+        {"aroma_id": "bergamot", "drops": 2},
+        {"aroma_id": "lavender", "drops": 1},
+        {"aroma_id": "geranium", "drops": 1}
+      ],
+      "effects": ["ストレス緩和", "リラックス"],
+      "scene": "仕事後のリラックスタイム"
+    },
+    {
+      "id": "focus_blend",
+      "name": "集中力アップブレンド",
+      "recipe": [
+        {"aroma_id": "rosemary", "drops": 2},
+        {"aroma_id": "lemon", "drops": 1},
+        {"aroma_id": "peppermint", "drops": 1}
+      ],
+      "effects": ["集中力向上", "記憶力向上"],
+      "scene": "勉強や仕事中"
+    },
+    {
+      "id": "cold_prevention",
+      "name": "風邪予防ブレンド",
+      "recipe": [
+        {"aroma_id": "eucalyptus", "drops": 2},
+        {"aroma_id": "tea_tree", "drops": 1},
+        {"aroma_id": "lemon", "drops": 1}
+      ],
+      "effects": ["抗菌", "免疫力向上"],
+      "scene": "風邪の流行時期"
+    }
+  ]
+}

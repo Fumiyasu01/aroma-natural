@@ -1,0 +1,23 @@
+{
+  "name": "アロマライフ",
+  "short_name": "アロマ",
+  "description": "使う・記録する・つながる、アロマの継続利用をサポートするアプリ",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#9B7EBD",
+  "background_color": "#F5F0FF",
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": "/",
+  "scope": "/"
+}
