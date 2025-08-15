@@ -15,6 +15,7 @@ export default function SignupPage() {
   const [confirmPassword, setConfirmPassword] = useState('')
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
+  const [success, setSuccess] = useState(false)
 
   async function handleSignup(e: React.FormEvent) {
     e.preventDefault()
@@ -34,7 +35,8 @@ export default function SignupPage() {
 
     try {
       await signUpWithEmail(email, password, name)
-      router.push('/')
+      setSuccess(true)
+      setError('')
     } catch (err: any) {
       setError(err.message || '登録に失敗しました')
     } finally {
@@ -52,6 +54,38 @@ export default function SignupPage() {
       setError(err.message || 'Google登録に失敗しました')
       setLoading(false)
     }
+  }
+
+  if (success) {
+    return (
+      <div className="min-h-screen bg-gradient-to-b from-[var(--primary-light)] to-white flex flex-col items-center justify-center px-4 py-8">
+        <div className="w-full max-w-sm">
+          <div className="text-center">
+            <div className="w-20 h-20 bg-[var(--success)] rounded-full flex items-center justify-center mx-auto mb-4">
+              <FaEnvelope className="text-white text-3xl" />
+            </div>
+            <h2 className="text-2xl font-bold text-[var(--text-dark)] mb-4">
+              登録ありがとうございます！
+            </h2>
+            <p className="text-[var(--text-dark)] mb-6">
+              確認メールを送信しました。<br />
+              メール内のリンクをクリックして<br />
+              登録を完了してください。
+            </p>
+            <p className="text-sm text-[var(--text-light)] mb-6">
+              メールが届かない場合は、<br />
+              迷惑メールフォルダをご確認ください。
+            </p>
+            <Link
+              href="/login"
+              className="inline-block bg-[var(--primary)] text-white rounded-full px-8 py-3 font-medium hover:bg-opacity-90 transition-colors"
+            >
+              ログインページへ
+            </Link>
+          </div>
+        </div>
+      </div>
+    )
   }
 
   return (

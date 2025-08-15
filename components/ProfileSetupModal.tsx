@@ -255,10 +255,10 @@ export default function ProfileSetupModal({ onComplete, onClose, isInitialSetup 
         </div>
 
         <div className="p-4 border-t border-gray-100">
-          <div className="flex items-center justify-between gap-4">
+          <div className="flex items-center justify-between">
             <button
               onClick={() => setStep(step - 1)}
-              className={`px-6 py-3 text-[var(--primary)] font-medium ${
+              className={`px-4 py-2 text-[var(--primary)] font-medium ${
                 step === 1 ? 'invisible' : ''
               }`}
             >
@@ -280,7 +280,7 @@ export default function ProfileSetupModal({ onComplete, onClose, isInitialSetup 
               <button
                 onClick={() => setStep(step + 1)}
                 disabled={!canProceed()}
-                className={`px-6 py-3 rounded-full font-medium transition-colors ${
+                className={`px-4 py-2 rounded-full font-medium transition-colors ${
                   canProceed()
                     ? 'bg-[var(--primary)] text-white'
                     : 'bg-gray-200 text-gray-400'
@@ -292,7 +292,7 @@ export default function ProfileSetupModal({ onComplete, onClose, isInitialSetup 
               <button
                 onClick={handleComplete}
                 disabled={!canProceed()}
-                className={`px-6 py-3 rounded-full font-medium transition-colors ${
+                className={`px-4 py-2 rounded-full font-medium transition-colors ${
                   canProceed()
                     ? 'bg-[var(--primary)] text-white'
                     : 'bg-gray-200 text-gray-400'
