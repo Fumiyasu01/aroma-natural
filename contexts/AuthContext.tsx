@@ -76,10 +76,14 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   }
 
   async function signInWithGoogle() {
+    const redirectUrl = typeof window !== 'undefined' 
+      ? `${window.location.origin}/`
+      : 'https://aroma-natural2.vercel.app/'
+    
     const { error } = await supabase.auth.signInWithOAuth({
       provider: 'google',
       options: {
-        redirectTo: `${window.location.origin}/`,
+        redirectTo: redirectUrl,
       },
     })
     if (error) throw error
