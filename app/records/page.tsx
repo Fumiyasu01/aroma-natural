@@ -199,7 +199,7 @@ export default function RecordsPage() {
     <div className="min-h-screen bg-[var(--bg-gray)]">
       <Header />
 
-      <main className="px-4 py-6 pb-24">
+      <main className="px-4 py-6" style={{ paddingBottom: 'calc(80px + env(safe-area-inset-bottom))' }}>
         <div className="bg-white rounded-2xl p-4 shadow-sm mb-6">
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-lg font-bold text-[var(--text-dark)]">
@@ -330,7 +330,8 @@ export default function RecordsPage() {
           setSelectedDate(new Date())
           setShowRecordModal(true)
         }}
-        className="fixed bottom-20 right-4 bg-[var(--primary)] text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg"
+        className="fixed right-4 bg-[var(--primary)] text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg"
+        style={{ bottom: 'calc(70px + env(safe-area-inset-bottom))' }}
       >
         <FaPlus className="text-xl" />
       </button>

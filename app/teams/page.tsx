@@ -131,7 +131,7 @@ export default function TeamsPage() {
         </div>
       </div>
 
-      <main className="px-4 py-6">
+      <main className="px-4 py-6" style={{ paddingBottom: 'calc(80px + env(safe-area-inset-bottom))' }}>
         {!user && (
           <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 mb-6">
             <p className="text-sm text-yellow-800">

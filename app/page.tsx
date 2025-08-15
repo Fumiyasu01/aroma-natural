@@ -108,7 +108,7 @@ export default function Home() {
     <div className="min-h-screen bg-[var(--bg-gray)]">
       <Header />
 
-      <main className="px-4 py-6">
+      <main className="px-4 py-6" style={{ paddingBottom: 'calc(80px + env(safe-area-inset-bottom))' }}>
         <div className="mb-6">
           <p className="text-sm text-[var(--text-light)]">{formattedDate}</p>
           <h2 className="text-2xl font-bold text-[var(--text-dark)] mt-1">
