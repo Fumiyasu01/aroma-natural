@@ -148,7 +148,7 @@ export default function AIConsultPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[var(--bg-gray)] flex flex-col pb-14">
+    <div className="min-h-screen bg-[var(--bg-gray)] flex flex-col">
       <header className="safe-top bg-white shadow-sm">
         <div className="px-4 py-4 flex items-center justify-between">
           <div className="flex items-center">
@@ -173,7 +173,7 @@ export default function AIConsultPage() {
         </div>
       </header>
 
-      <div className="flex-1 overflow-y-auto px-4 py-4 pb-20">
+      <div className="flex-1 overflow-y-auto px-4 py-4" style={{ paddingBottom: '180px' }}>
         {messages.map((message) => (
           <div
             key={message.id}
@@ -258,14 +258,14 @@ export default function AIConsultPage() {
       </div>
 
       {messages.length === 1 && (
-        <div className="px-4 pb-4">
+        <div className="fixed bottom-0 left-0 right-0 px-4 pb-36 max-w-[430px] mx-auto bg-gradient-to-t from-white via-white to-transparent pt-4">
           <p className="text-sm text-[var(--text-light)] mb-2">よくある相談</p>
           <div className="flex flex-wrap gap-2">
             {quickQuestions.map((question) => (
               <button
                 key={question}
                 onClick={() => setInputText(question)}
-                className="px-3 py-1 bg-white border border-gray-200 rounded-full text-sm text-[var(--text-dark)] hover:border-[var(--primary)] hover:text-[var(--primary)]"
+                className="px-3 py-1 bg-white border border-gray-200 rounded-full text-sm text-[var(--text-dark)] hover:border-[var(--primary)] hover:text-[var(--primary)] shadow-sm"
               >
                 {question}
               </button>
@@ -274,7 +274,7 @@ export default function AIConsultPage() {
         </div>
       )}
 
-      <div className="fixed bottom-14 left-0 right-0 bg-white border-t border-gray-200 px-4 py-4 max-w-[430px] mx-auto">
+      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-4 pt-4 pb-20 max-w-[430px] mx-auto">
         <div className="flex gap-3">
           <input
             type="text"
