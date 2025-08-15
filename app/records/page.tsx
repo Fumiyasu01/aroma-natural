@@ -199,7 +199,7 @@ export default function RecordsPage() {
     <div className="min-h-screen bg-[var(--bg-gray)]">
       <Header />
 
-      <main className="px-4 py-6">
+      <main className="px-4 py-6 pb-24">
         <div className="bg-white rounded-2xl p-4 shadow-sm mb-6">
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-lg font-bold text-[var(--text-dark)]">
@@ -335,9 +335,9 @@ export default function RecordsPage() {
         <FaPlus className="text-xl" />
       </button>
 
-      {showRecordModal && selectedDate && (
+      {showRecordModal && (
         <RecordModal
-          date={selectedDate}
+          date={selectedDate || new Date()}
           onClose={() => setShowRecordModal(false)}
           onSave={handleSaveRecord}
         />
