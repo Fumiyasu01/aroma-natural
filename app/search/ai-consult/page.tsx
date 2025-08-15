@@ -173,7 +173,7 @@ export default function AIConsultPage() {
         </div>
       </header>
 
-      <div className="flex-1 overflow-y-auto px-4 py-4" style={{ paddingBottom: '180px' }}>
+      <div className="flex-1 overflow-y-auto px-4 py-4" style={{ paddingBottom: '240px' }}>
         {messages.map((message) => (
           <div
             key={message.id}
@@ -258,7 +258,7 @@ export default function AIConsultPage() {
       </div>
 
       {messages.length === 1 && (
-        <div className="fixed bottom-0 left-0 right-0 px-4 pb-36 max-w-[430px] mx-auto bg-gradient-to-t from-white via-white to-transparent pt-4">
+        <div className="fixed left-0 right-0 px-4 pb-4 max-w-[430px] mx-auto bg-gradient-to-t from-white via-white to-transparent pt-4" style={{ bottom: '140px' }}>
           <p className="text-sm text-[var(--text-light)] mb-2">よくある相談</p>
           <div className="flex flex-wrap gap-2">
             {quickQuestions.map((question) => (
@@ -274,7 +274,7 @@ export default function AIConsultPage() {
         </div>
       )}
 
-      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-4 pt-4 pb-20 max-w-[430px] mx-auto">
+      <div className="fixed left-0 right-0 bg-white border-t border-gray-200 px-4 pt-3 pb-2 max-w-[430px] mx-auto z-40" style={{ bottom: '60px' }}>
         <div className="flex gap-3">
           <input
             type="text"
