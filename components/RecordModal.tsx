@@ -45,7 +45,7 @@ export default function RecordModal({ date, onClose, onSave }: RecordModalProps)
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-end">
-      <div className="bg-white w-full max-h-[90vh] rounded-t-3xl animate-slide-up overflow-hidden">
+      <div className="bg-white w-full h-[85vh] rounded-t-3xl animate-slide-up overflow-hidden flex flex-col">
         <div className="sticky top-0 bg-white p-4 border-b border-gray-100">
           <div className="flex items-center justify-between">
             <h2 className="text-xl font-bold text-[var(--text-dark)]">
@@ -63,7 +63,7 @@ export default function RecordModal({ date, onClose, onSave }: RecordModalProps)
           </p>
         </div>
 
-        <div className="p-4 pb-8 overflow-y-auto" style={{ maxHeight: 'calc(90vh - 80px)' }}>
+        <div className="flex-1 p-4 pb-8 overflow-y-auto">
           <div className="mb-6">
             <label className="text-sm font-bold text-[var(--text-dark)] mb-2 block">
               記録タイプ
@@ -207,6 +207,9 @@ export default function RecordModal({ date, onClose, onSave }: RecordModalProps)
             </button>
           </div>
 
+        </div>
+        
+        <div className="p-4 bg-white border-t border-gray-100">
           <button
             onClick={handleSave}
             disabled={selectedAromas.length === 0}
