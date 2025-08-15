@@ -80,13 +80,13 @@ export default function ProfileSetupModal({ onComplete, onClose, isInitialSetup 
     if (step === 1) return nickname.trim() !== ''
     if (step === 2) return experienceLevel !== ''
     if (step === 3) return true
-    if (step === 4) return goals.length > 0
+    if (step === 4) return true  // 目的選択は任意
     return false
   }
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 px-4">
-      <div className="bg-white rounded-2xl w-full max-w-md max-h-[90vh] overflow-hidden flex flex-col">
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-end justify-center z-50">
+      <div className="bg-white rounded-t-2xl w-full max-w-md h-[85vh] overflow-hidden flex flex-col">
         <div className="p-4 border-b border-gray-100 flex items-center justify-between">
           <h2 className="text-xl font-bold text-[var(--text-dark)]">
             {isInitialSetup ? 'プロフィール設定' : 'プロフィール編集'}
@@ -226,7 +226,7 @@ export default function ProfileSetupModal({ onComplete, onClose, isInitialSetup 
                   アロマを使う目的
                 </h3>
                 <p className="text-sm text-[var(--text-light)]">
-                  興味のある分野を選んでください（複数選択可）
+                  興味のある分野を選んでください（スキップ可）
                 </p>
               </div>
 
